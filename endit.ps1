@@ -1,5 +1,5 @@
 # just close everything
-$exceptions="Teams"
+$exceptions="Teams","powershell"
 
 function endit {
     $parent = (gwmi win32_process | ? processid -eq  $PID).parentprocessid
